@@ -165,14 +165,13 @@ h1 span { color: var(--blue); }
 }
 
 .card {
+  grid-column: span 6;
   border: 1.5px solid var(--ink);
   background: rgba(255, 255, 255, 0.78);
   padding: 1.45rem;
 }
 
-.card:nth-of-type(1) { grid-column: span 12; }
-.card:nth-of-type(2),
-.card:nth-of-type(3) { grid-column: span 6; }
+.card:nth-of-type(-n + 2) { grid-column: span 12; }
 
 .card h2 {
   margin-top: 0.45rem;
@@ -283,8 +282,7 @@ footer {
 }
 
 @media (max-width: 940px) {
-  .card:nth-of-type(2),
-  .card:nth-of-type(3) { grid-column: span 12; }
+  .card { grid-column: span 12; }
 }
 
 @media (max-width: 780px) {
