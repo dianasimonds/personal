@@ -198,6 +198,7 @@ h1 span { color: var(--blue); }
 
 .about,
 .research,
+.exhibitions,
 .resume,
 .contact {
   margin-top: 4.3rem;
@@ -206,6 +207,7 @@ h1 span { color: var(--blue); }
 
 .about h2,
 .research h2,
+.exhibitions h2,
 .resume h2,
 .contact h2,
 .big-cta h2 {
@@ -216,12 +218,14 @@ h1 span { color: var(--blue); }
 }
 
 .about p,
+.exhibitions p,
 .resume p,
 .contact p {
   color: #333333;
 }
 
-.research ul {
+.research ul,
+.exhibitions ul {
   display: grid;
   gap: 0.75rem;
   margin: 1.25rem 0 0;
@@ -229,8 +233,23 @@ h1 span { color: var(--blue); }
   color: #333333;
 }
 
-.research li { padding-inline-start: 0.35rem; }
-.research li::marker { color: var(--blue); }
+.research li,
+.exhibitions li { padding-inline-start: 0.35rem; }
+.research li::marker,
+.exhibitions li::marker { color: var(--blue); }
+
+.exhibitions a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.exhibitions a:hover { text-decoration-thickness: 2px; }
+.exhibitions a:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
 
 .big-cta {
   margin-top: 4.3rem;
